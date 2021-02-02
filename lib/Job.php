@@ -93,5 +93,18 @@ $this->db->bind(':contact_email', $data['contact_email']);
             return false;
         }
     }
+    //Delete Job
+    public function delete($id){
+        //insert Querry
+        $this->db->querry("DELETE FROM jobs WHERE id = $");
+//EXECUTE
+        if($this->db->execute()){
+            return true;
+
+        }
+        else{
+            return false;
+        }
+    }
 }
 

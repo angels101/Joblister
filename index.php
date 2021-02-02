@@ -20,4 +20,4 @@ else {
 
 $template->categories = $job->getCategories();
 
-echo $template;
+echo $template; 

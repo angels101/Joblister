@@ -11,7 +11,7 @@ class Database
     private $stmt;
 
     public function __construct()
-    {        // Ser DSN
+    { // Ser DSN
         $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
 
         // Set Options
@@ -29,9 +29,9 @@ class Database
             $this->error = $e->getMessage();
         }
     }
-    public function querry($query)
+    public function querry($querry)
     {
-        $this->stmt = $this->dbh->prepare($query);
+        $this->stmt = $this->dbh->prepare($querry);
     }
 
     public function bind($param, $value, $type = null)
